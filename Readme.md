@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 - Студент: [Роман Шашин](https://up.htmlacademy.ru/htmlcss/32/user/1897333).
-- Наставник: `Арсений Матыцин`.
+- Наставник: [Арсений Матыцин](https://up.htmlacademy.ru/profession/frontender/12/htmlcss/user/225539).
 
 ---
 
