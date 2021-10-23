@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  color: inherit;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.main-index {
+  color: inherit;
+  background-color: inherit;
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/main/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
