@@ -91,7 +91,7 @@ body {
   background-color: #ffffff;
 }
 
-.button-hotelsearch {
+.button-brown {
   color: #ffffff;
   background-color: #756257;
   text-decoration: none;
@@ -104,4 +104,99 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+.main-inner {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/catalogue-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.inner-header-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.button-azure {
+  color: #ffffff;
+  background: #83b3d3;
+}
+
+.bg-white {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.stars-1 {
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-repeat: repeat-x;
+  width: 18px;
+}
+
+.stars-2 {
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-repeat: repeat-x;
+  width: 36px;
+}
+
+.stars-3 {
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-repeat: repeat-x;
+  width: 54px;
+}
+
+.stars-4 {
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-repeat: repeat-x;
+  width: 72px;
+}
+
+.stars-5 {
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-repeat: repeat-x;
+  width: 90px;
+}
+
+.hotel-type {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.hotel-card-price {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.ratio-points {
+  color: #333333;
+  background-color: #f2f2f2;
+}
+
+.promise {
+  color: #333333;
+}
+
+.email-field {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+.contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  visibility: hidden;
 }
