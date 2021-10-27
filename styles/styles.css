@@ -14,12 +14,44 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+  outline: 5px dashed red;
+  outline-offset: -5px;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.navigation-list {
+  width: 530px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  width: 280px;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-link {
@@ -28,6 +60,10 @@ body {
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .main-index {
@@ -39,13 +75,34 @@ body {
   text-align: center;
 }
 
-.divider {
-  size: 100% auto;
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
+.welcome {
+  display: block;
+  margin: 0 auto;
+}
+
+.about {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*.divider {
+  position: absolute;
+  left: 0;
+  width: 100% auto;
+}*/
+
 .comparison {
+  margin: 0;
+  padding: 0;
   color: #333333;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
 }
 
 .reason-title {
@@ -198,5 +255,5 @@ body {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  display: none;
 }
