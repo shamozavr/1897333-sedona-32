@@ -156,78 +156,99 @@
         <img class="dropdown-arrow" src="images/catalogue/dropdown-arrow.svg"
           alt="изображение стрелки вниз в выпадающем списке">
       </form>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать карточки</span>
-        <img class="catalogue-view" src="images/catalogue/view-tile.svg" alt="демонстрация в виде сетки">
-      </a>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать список c описанием</span>
-        <img class="catalogue-view" src="images/catalogue/view-slideshow.svg" alt="демонстрация в виде слайдшоу">
-      </a>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать список</span>
-        <img class="catalogue-view" src="images/catalogue/view-list.svg" alt="демонстрация в виде списка">
-      </a>
-      <ul class="hotel-list">
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="images/catalogue/catalogue-1.jpg" alt="изображение Amara Resort & Spa">
+      <section class="view-buttons">
+        <a href="#" class="button">
+          <span class="visually-hidden">Показать карточки</span>
+          <img class="catalogue-view" src="images/catalogue/view-tile.svg" alt="демонстрация в виде сетки">
+        </a>
+        <a href="#" class="button">
+          <span class="visually-hidden">Показать список c описанием</span>
+          <img class="catalogue-view" src="images/catalogue/view-slideshow.svg" alt="демонстрация в виде слайдшоу">
+        </a>
+        <a href="#" class="button">
+          <span class="visually-hidden">Показать список</span>
+          <img class="catalogue-view" src="images/catalogue/view-list.svg" alt="демонстрация в виде списка">
+        </a>
+      </section>
+      <!--список отелей-->
+      <section class="hotel-list">
+        <a class="hotel-card-link" href="hotel.html">
+          <img class="hotel-card-image" src="images/catalogue/catalogue-1.jpg" alt="изображение Amara Resort & Spa">
+        </a>
+        <ul class="hotel-card">
+          <li>
             <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-          </a>
-          <p class="hotel-type">Гостиница</p>
-          <p class="hotel-card-price">от 4000 ₽</p>
-          <div class="button-button">
-            <a href="#" class="hotel-card-button button-brown">Подробнее</a>
-            <a href="#" class="button add-to-wishlist">В избранное</a>
-          </div>
-          <p class="ratio stars-4"></p>
+            <p class="hotel-type">Гостиница</p>
+            <p class="hotel-card-price">от 4000 ₽</p>
+          </li>
+        </ul>
+        <div class="hotel-buttons">
+          <a href="#" class="hotel-card-button button-brown">Подробнее</a>
+          <a href="#" class="button add-to-wishlist">В избранное</a>
+        </div>
+        <group class="ratio">
+          <p class="ratio-stars-4"></p>
           <!--какого хера не отображаются долбаные звездочки-->
           <p class="ratio-points">Рейтинг:8.5</p>
-        </li>
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="images/catalogue/catalogue-2.jpg" alt="изображение Desert Quail Inn">
+        </group>
+
+        <a class="hotel-card-link" href="hotel.html">
+          <img class="hotel-card-image" src="images/catalogue/catalogue-2.jpg" alt="изображение Desert Quail Inn">
+        </a>
+        <ul class="hotel-card">
+          <li class="hotel-card">
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
-          </a>
-          <p class="hotel-type">Мотель</p>
-          <p class="hotel-card-price">от 3000 ₽</p>
+            <p class="hotel-type">Мотель</p>
+            <p class="hotel-card-price">от 3000 ₽</p>
+          </li>
+        </ul>
+        <div class="hotel-buttons">
           <a href="#" class="hotel-card-button button-brown">Подробнее</a>
           <a href="#" class="button add-to-wishlist">В избранное</a>
-          <form class="ratio stars-3">
-            <br>
-            <p class="ratio-points">Рейтинг:8.9</p>
-          </form>
-        </li>
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="images/catalogue/catalogue-3.jpg"
-              alt="изображение Villas at Poco Diablo">
+        </div>
+        <form class="ratio-stars-3">
+          <br>
+          <p class="ratio-points">Рейтинг:8.9</p>
+        </form>
+
+        <a class="hotel-card-link" href="hotel.html">
+          <img class="hotel-card-image" src="images/catalogue/catalogue-3.jpg" alt="изображение Villas at Poco Diablo">
+        </a>
+        <ul>
+          <li class="hotel-card">
             <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-          </a>
-          <p class="hotel-type">Аппартаменты</p>
-          <p class="hotel-card-price">от 2000 ₽</p>
+            <p class="hotel-type">Аппартаменты</p>
+            <p class="hotel-card-price">от 2000 ₽</p>
+          </li>
+        </ul>
+        <div class="hotel-buttons">
           <a href="#" class="hotel-card-button button-brown">Подробнее</a>
           <a href="#" class="button add-to-wishlist">В избранное</a>
-          <form class="ratio stars-2">
-            <br>
-            <p class="ratio-points">Рейтинг:9.2</p>
-          </form>
-        </li>
-        <li class="hotel-card">
-          <a class="hotel-card-link" href="hotel.html">
-            <img class="hotel-card-image" src="images/catalogue/catalogue-4.jpg" alt="изображение GreenTree Inn">
+        </div>
+        <form class="ratio-stars-2">
+          <br>
+          <p class="ratio-points">Рейтинг:9.2</p>
+        </form>
+
+        <a class="hotel-card-link" href="hotel.html">
+          <img class="hotel-card-image" src="images/catalogue/catalogue-4.jpg" alt="изображение GreenTree Inn">
+        </a>
+        <ul>
+          <li class="hotel-card">
             <h3 class="hotel-card-title">GreenTree Inn</h3>
-          </a>
-          <p class="hotel-type">Гостиница</p>
-          <p class="hotel-card-price">от 3000 ₽</p>
+            <p class="hotel-type">Гостиница</p>
+            <p class="hotel-card-price">от 3000 ₽</p>
+          </li>
+        </ul>
+        <div class="hotel-buttons">
           <a href="#" class="hotel-card-button button-brown">Подробнее</a>
           <a href="#" class="button add-to-wishlist">В избранное</a>
-          <form class="ratio stars-2">
-            <br>
-            <p class="ratio-points">Рейтинг:9.2</p>
-          </form>
-        </li>
-      </ul>
+        </div>
+        <form class="ratio-stars-2">
+          <br>
+          <p class="ratio-points">Рейтинг:9.2</p>
+        </form>
+      </section>
       <ul class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-prev pagination-disabled">
@@ -259,10 +280,10 @@
         </li>
       </ul>
       <button class="button pagination-show-more button-azure" type="button">Загрузить еще</button>
-      <form class="hotels-page-number">
-        <h3 class="hotels-page-number-result">Гостиниц на странице:</h3>
-        <label class="visually-hidden" for="number-display"></label>
-        <select class="select-control" id="number-display" name="number-display">
+      <form class="hotels-page-count-for-show">
+        <h3 class="hotels-page-count-for-show-result">Гостиниц на странице:</h3>
+        <label class="visually-hidden" for="count-for-show-display"></label>
+        <select class="select-control" id="count-for-show-display" name="count-for-show-display">
           <option value="4">4</option>
           <option value="10">10</option>
           <option value="15">15</option>
@@ -270,7 +291,7 @@
         <button class="visually-hidden" type="submit">отобразить</button>
       </form>
       <!--подписка на рассылку-->
-      <section class="mailing-inner">
+      <section class="subscribe">
         <h2>Подпишись на рассылку</h2>
         <p class="promise">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
@@ -286,21 +307,21 @@
   </main>
   <footer class="page-footer">
     <section class="footer-social">
-      <h2 class="visually-hidden">соц сети</h2>
+      <h2 class="visually-hidden">соц. сети.</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a class="button" href="#">
-            <span class="visually-hidden">twitter</span>
+            <span class="visually-hidden">Twitter</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="button" href="#">
-            <span class="visually-hidden">facebook</span>
+            <span class="visually-hidden">Facebook</span>
           </a>
         </li>
         <li class="footer-social-item">
           <a class="button" href="#">
-            <span class="visually-hidden">youtube</span>
+            <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
