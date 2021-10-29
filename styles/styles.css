@@ -16,12 +16,11 @@
 
 html {
   height: 100%;
-  outline: 5px dashed red;
-  outline-offset: -5px;
 }
 
 body {
   margin: 0;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -85,6 +84,12 @@ body {
   margin: 0 auto;
 }
 
+.intro {
+  height: 282px;
+  margin: 0;
+  padding: 0;
+}
+
 .about {
   margin: 0;
   padding: 0;
@@ -103,6 +108,32 @@ body {
   padding: 0;
   color: #333333;
   background-color: #ffffff;
+}
+
+/*не работает
+.reasons {
+  width: 1200px;
+  margin: 0 auto;
+}
+*/
+
+.reason {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 384px;
+}
+
+.reason-photo {
+  width: 800;
+  height: 384;
+}
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 .reason-title {
@@ -154,6 +185,10 @@ body {
   text-decoration: none;
 }
 
+.interested {
+  height: 417px;
+}
+
 .mailing {
   color: #ffffff;
   background-color: #000000;
@@ -161,6 +196,7 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+  height: 411px;
 }
 
 .main-inner {
@@ -189,31 +225,31 @@ body {
   background-color: #ffffff;
 }
 
-.stars-1 {
+.ratio-stars-1 {
   background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
   background-repeat: repeat-x;
   width: 18px;
 }
 
-.stars-2 {
+.ratio-stars-2 {
   background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
   background-repeat: repeat-x;
   width: 36px;
 }
 
-.stars-3 {
+.ratio-stars-3 {
   background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
   background-repeat: repeat-x;
   width: 54px;
 }
 
-.stars-4 {
+.ratio-stars-4 {
   background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
   background-repeat: repeat-x;
   width: 72px;
 }
 
-.stars-5 {
+.ratio-stars-5 {
   background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
   background-repeat: repeat-x;
   width: 90px;
@@ -256,4 +292,25 @@ body {
 
 .visually-hidden {
   display: none;
+}
+
+/*
+.page-footer {
+  height: 120px;
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+*/
+
+.footer-social {
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+.contacts-phone {
+  display: flex;
+  justify-content: center;
 }
