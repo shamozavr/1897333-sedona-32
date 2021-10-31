@@ -34,11 +34,10 @@ body {
 }
 
 .navigation {
+  height: 70px;
   display: flex;
-  width: 1200px;
+  width: 1057px;
   margin: 0 auto;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
 
 .navigation-list {
@@ -79,9 +78,16 @@ body {
   margin: 0 auto;
 }
 
-.welcome {
-  display: block;
+.divider {
+  width: 1200px;
+  height: 67px;
+  content: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/main/divider.svg");
+}
+
+.welcome::after {
+  height: 485px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .intro {
@@ -97,11 +103,11 @@ body {
   background-color: #ffffff;
 }
 
-/*.divider {
+.divider {
   position: absolute;
   left: 0;
-  width: 100% auto;
-}*/
+  width: 1200;
+}
 
 .comparison {
   margin: 0;
@@ -201,11 +207,16 @@ body {
 
 .main-inner {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #ffffff;
   background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/catalogue-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
+}
+
+.main-inner-container {
+  width: 1056px;
+  margin: 0 auto;
 }
 
 .inner-header-title {
@@ -213,6 +224,39 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+}
+
+.breadcrumbs {
+  display: flex;
+}
+
+.hotel-parameter {
+  display: flex;
+}
+
+.hotel-card {
+  width: 1056px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid #e6e6e6;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-card-image {
+  width: 180px;
+  height: 120px;
+}
+
+.button-more-info {
+  width: 151px;
+  height: 37px;
+}
+
+.button-add-to-wishlist {
+  width: 160px;
+  height: 37px;
 }
 
 .button-azure {
@@ -268,6 +312,28 @@ body {
 .ratio-points {
   color: #333333;
   background-color: #f2f2f2;
+  width: 160px;
+  height: 37px;
+}
+
+.pagination-show-more {
+  width: 625px;
+  height: 55px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-item {
+  width: 55px;
+  height: 55px;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
 }
 
 .promise {
@@ -290,11 +356,6 @@ body {
   text-decoration: none;
 }
 
-.visually-hidden {
-  display: none;
-}
-
-/*
 .page-footer {
   height: 120px;
   display: flex;
@@ -302,15 +363,38 @@ body {
   margin: 0 auto;
   justify-content: center;
 }
-*/
 
 .footer-social {
   display: flex;
+  flex-direction: row;
   justify-content: left;
+  width: 240px;
+  height: 50px;
   margin: 0;
   padding: 0;
 }
+
 .contacts-phone {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 720px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.promo {
+  width: 240px;
+  height: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
