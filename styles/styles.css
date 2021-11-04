@@ -195,7 +195,12 @@ body {
   height: 417px;
 }
 
+.interested-container {
+  padding-top: 91px;
+}
+
 .mailing {
+  display: block;
   color: #ffffff;
   background-color: #000000;
   background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/main/mailing-background.jpg");
@@ -203,6 +208,10 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   height: 411px;
+}
+
+.mailing-container {
+  padding-top: 94px;
 }
 
 .main-inner {
@@ -366,20 +375,24 @@ body {
 
 .page-footer {
   height: 120px;
-  display: flex;
   width: 1200px;
+  display: flex;
   margin: 0 auto;
-  justify-content: center;
+  align-content: center;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: space-between;
+  width: 107px;
+  height: 18px;
+  margin-left: 72px;
+  padding: 0;
+  align-self: center;
 }
 
 .footer-social {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-  width: 240px;
-  height: 50px;
-  margin: 0;
-  padding: 0;
+  align-content: center;
 }
 
 .contacts-phone {
