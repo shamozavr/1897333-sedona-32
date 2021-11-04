@@ -323,12 +323,20 @@ body {
 
 .pagination {
   display: flex;
-  justify-content: space-between;
+  justify-content: left;
+  margin-right: 8px;
 }
 
 .pagination-item {
   width: 55px;
   height: 55px;
+  font-size: 20px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 8px;
 }
 
 .pages {
