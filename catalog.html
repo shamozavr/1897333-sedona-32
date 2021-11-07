@@ -145,13 +145,14 @@
           </label>
         </fieldset>
         <div class="filter-button">
-          <button class="button-azure" type="submit">Применить</button>
+          <button class="button-submit button-azure" type="submit">Применить</button>
           <a href="catalog.html">Сбросить</a>
         </div>
       </div>
       <div class="bg-white">
-        <form class="sorting-type">
-          <h2 class="searching-result">Найдено гостиниц:</h2>
+        <div class="display-parameters">
+          <h2 class="searching-result">Найдено гостиниц: 38</h2>
+          <form class="sorting-type"></form>
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
             <option value="popular">Сначала популярное</option>
@@ -161,21 +162,22 @@
           <button class="visually-hidden" type="submit">Отсортировать гостиницы</button>
           <img class="dropdown-arrow" src="images/catalogue/dropdown-arrow.svg"
             alt="изображение стрелки вниз в выпадающем списке">
-        </form>
-        <section class="view-buttons">
-          <a href="#" class="button">
-            <span class="visually-hidden">Показать карточки</span>
-            <img class="catalogue-view" src="images/catalogue/view-tile.svg" alt="демонстрация в виде сетки">
-          </a>
-          <a href="#" class="button">
-            <span class="visually-hidden">Показать список c описанием</span>
-            <img class="catalogue-view" src="images/catalogue/view-slideshow.svg" alt="демонстрация в виде слайдшоу">
-          </a>
-          <a href="#" class="button">
-            <span class="visually-hidden">Показать список</span>
-            <img class="catalogue-view" src="images/catalogue/view-list.svg" alt="демонстрация в виде списка">
-          </a>
-        </section>
+          </form>
+          <section class="view-buttons">
+            <a href="#" class="button">
+              <span class="visually-hidden">Показать карточки</span>
+              <img class="catalogue-view" src="images/catalogue/view-tile.svg" alt="демонстрация в виде сетки">
+            </a>
+            <a href="#" class="button">
+              <span class="visually-hidden">Показать список c описанием</span>
+              <img class="catalogue-view" src="images/catalogue/view-slideshow.svg" alt="демонстрация в виде слайдшоу">
+            </a>
+            <a href="#" class="button">
+              <span class="visually-hidden">Показать список</span>
+              <img class="catalogue-view" src="images/catalogue/view-list.svg" alt="демонстрация в виде списка">
+            </a>
+          </section>
+        </div>
         <!--список отелей-->
         <section class="hotel-list">
           <div class="hotel-card">
@@ -311,10 +313,10 @@
           <form action="https://echo.htmlacademy.ru/" method="post">
             <p class="newsletter-email">
               <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="email-field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
-                id="newsletter-email" required>
+              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                required>
             </p>
-            <button class="button button-azure" type="submit">Подписаться</button>
+            <button class="button-subscribe button-azure" type="submit">Подписаться</button>
           </form>
         </section>
       </div>
