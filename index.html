@@ -135,7 +135,7 @@
           <h2>Заинтересовались?</h2>
           <p class="travel-date">Укажите предполагаемые даты поездки,<br> и мы мокажем вам лучшие предложения гостиниц в
             Седоне</p>
-          <a class="button-brown" href="catalog.html">Поиск гостиницы в Седоне</a>
+          <a class="button-brown looking-for-hotel" href="catalog.html">Поиск гостиницы в Седоне</a>
         </div>
       </section>
       <!--подписка на рассылку-->
@@ -143,14 +143,16 @@
         <div class="mailing-container">
           <h2>Подпишись на рассылку</h2>
           <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <p class="newsletter-email">
-              <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-                required>
-            </p>
-            <button class="button button-azure" type="submit">Подписаться</button>
-          </form>
+          <div class="subscription-form">
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <p class="newsletter-email">
+                <label class="visually-hidden" for="newsletter-email">Email</label>
+                <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+                  required>
+              </p>
+              <button class="button-subscribe button-azure" type="submit">Подписаться</button>
+            </form>
+          </div>
         </div>
       </section>
     </div>
@@ -168,7 +170,7 @@
         </li>
         <li class="footer-social-item">
           <a class="button" href="#">
-            <span class="visually-hidden">facebook</span>
+            <span class="visually-hidden">Facebook</span>
             <img class="facebook-icon" src="images/footer/social-facebook.svg" alt="иконка фейсбука">
           </a>
         </li>
