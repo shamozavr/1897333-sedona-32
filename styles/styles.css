@@ -212,6 +212,7 @@ body {
   color: #ffffff;
   background-color: #756257;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .interested {
@@ -276,16 +277,19 @@ body {
 }
 
 .inner-header-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
+  text-align: left;
+  margin-top: 35px;
+  line-height: 68px;
 }
 
+/*как их сместить влево?*/
 .breadcrumbs {
-  display: flex;
-  list-style-type: none;
+  width: 111;
+  height: 21;
   margin-left: 0;
+  display: flex;
+  justify-content: start;
+  list-style-type: none;
 }
 
 .breadcrumbs-item {
@@ -293,18 +297,27 @@ body {
 }
 
 .hotel-parameter {
+  margin-top: 45px;
   display: flex;
+}
+
+/*где чекбоксы*/
+.catalog-filter-list {
+  list-style-type: none;
 }
 
 .button-submit {
   width: 160px;
   height: 48px;
+  border: none;
+  margin-top: 105px;
 }
 
 .display-parameters {
   display: flex;
 }
 
+/*before и after не понимаю*/
 .searching-result {
   padding-right: 192px;
 }
@@ -328,11 +341,17 @@ body {
 .hotel-card {
   width: 1056px;
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
   align-items: center;
   border-top: 1px solid #e6e6e6;
   margin: 0;
   padding: 0;
+}
+
+.hotel-card-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 37px;
 }
 
 .hotel-card-image {
@@ -348,11 +367,13 @@ body {
 .button-add-to-wishlist {
   width: 160px;
   height: 37px;
+  border-radius: 4px;
 }
 
 .button-azure {
   color: #ffffff;
   background: #83b3d3;
+  text-decoration: none;
 }
 
 .bg-white {
@@ -405,13 +426,17 @@ body {
   background-color: #f2f2f2;
   width: 160px;
   height: 37px;
+  border-radius: 4px;
 }
 
+/*загрузить еще*/
 .pagination-show-more {
   width: 625px;
   height: 55px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
-
+/*пагинация*/
 .pagination {
   display: flex;
   justify-content: left;
@@ -459,15 +484,20 @@ body {
 
 .footer-social-list {
   display: flex;
-  justify-content: space-between;
-  width: 107px;
-  height: 18px;
+  flex-wrap: wrap;
+  width: 108px;
   margin-left: 72px;
   padding: 0;
   align-self: center;
   list-style-type: none;
 }
 
+.footer-social-item {
+  width: 32px;
+  height: 40px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
 .footer-social {
   align-content: center;
 }
