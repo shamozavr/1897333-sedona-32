@@ -1,0 +1,528 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline-offset: -5px;
+}
+
+.navigation {
+  height: 70px;
+  display: flex;
+  width: 1057px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  display: flex;
+  width: 530px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-user {
+  display: flex;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.navigation-link {
+  display: block;
+  flex-wrap: wrap;
+  padding: 19px 20px;
+  color: inherit;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 18px;
+}
+
+.main-container {
+  flex-grow: 1;
+  padding-top: 51.4px;
+}
+
+.main-index {
+  color: inherit;
+  background-color: inherit;
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/main/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.page-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.welcome {
+  height: 350.57px;
+  width: 456.7px;
+  margin-bottom: 83.03px;
+}
+
+.divider {
+  width: 1200px;
+  height: 67px;
+  content: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/main/divider.svg");
+}
+
+.intro {
+  height: 282px;
+  margin: 0;
+  padding: 0;
+}
+
+.about {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.divider {
+  position: absolute;
+  left: 0;
+  width: 1200;
+}
+
+.comparison {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/*не работает
+.reasons {
+  width: 1200px;
+  margin: 0 auto;
+}
+*/
+
+.reason {
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 384px;
+  list-style-type: none;
+}
+
+.reason-photo {
+  width: 800;
+  height: 384;
+}
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+.reason-title {
+  color: inherit;
+  background-color: inherit;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.reason-number {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+.reason-description {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+}
+
+/*надо додумать чтобы измавиться от coldblue-bg*/
+.reasons-list .reason .true-city {
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+
+.coldblue-bg {
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+
+.coldgrey-bg {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.warmgrey-bg {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.travel-date {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.button-brown {
+  color: #ffffff;
+  background-color: #756257;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.interested {
+  height: 417px;
+}
+
+.interested-container {
+  padding-top: 91px;
+  align-content: center;
+}
+
+.looking-for-hotel {
+  display: block;
+  margin: 0 auto;
+  width: 575px;
+  height: 60px;
+}
+
+.mailing {
+  display: block;
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/main/mailing-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 411px;
+}
+
+.mailing-container {
+  padding-top: 94px;
+}
+
+.field {
+  width: 600px;
+  height: 60px;
+}
+
+/*
+.subscription-form {
+  display: inline-block;
+}
+*/
+
+.button-subscribe {
+  width: 200px;
+  height: 60px;
+}
+
+.main-inner {
+  color: #ffffff;
+  background-color: #ffffff;
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/catalogue-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.main-inner-container {
+  width: 1056px;
+  margin: 0 auto;
+}
+
+.inner-header-title {
+  text-align: left;
+  margin-top: 35px;
+  line-height: 68px;
+}
+
+/*как их сместить влево?*/
+.breadcrumbs {
+  width: 111;
+  height: 21;
+  margin-left: 0;
+  display: flex;
+  justify-content: start;
+  list-style-type: none;
+}
+
+.breadcrumbs-item {
+  padding-right: 10px;
+}
+
+.hotel-parameter {
+  margin-top: 45px;
+  display: flex;
+}
+
+/*где чекбоксы*/
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+.button-submit {
+  width: 160px;
+  height: 48px;
+  border: none;
+  margin-top: 105px;
+}
+
+.display-parameters {
+  display: flex;
+}
+
+/*before и after не понимаю*/
+.searching-result {
+  padding-right: 192px;
+}
+
+.view-buttons {
+  display: flex;
+  margin-right: 0;
+  justify-content: space-between;
+}
+
+.catalogue-view {
+  display: block;
+  width: 16px;
+  height: 14px;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border-spacing: 16;
+}
+
+.hotel-card {
+  width: 1056px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-top: 1px solid #e6e6e6;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-card-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 37px;
+}
+
+.hotel-card-image {
+  width: 180px;
+  height: 120px;
+}
+
+.button-more-info {
+  width: 151px;
+  height: 37px;
+}
+
+.button-add-to-wishlist {
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+}
+
+.button-azure {
+  color: #ffffff;
+  background: #83b3d3;
+  text-decoration: none;
+}
+
+.bg-white {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.ratio-stars-1 {
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-repeat: repeat-x;
+  width: 18px;
+}
+
+.ratio-stars-2 {
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-repeat: repeat-x;
+  width: 36px;
+}
+
+.ratio-stars-3 {
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-repeat: repeat-x;
+  width: 54px;
+}
+
+.ratio-stars-4 {
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-repeat: repeat-x;
+  width: 72px;
+}
+
+.ratio-stars-5 {
+  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-repeat: repeat-x;
+  width: 90px;
+}
+
+.hotel-type {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.hotel-card-price {
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.ratio-points {
+  color: #333333;
+  background-color: #f2f2f2;
+  width: 160px;
+  height: 37px;
+  border-radius: 4px;
+}
+
+/*загрузить еще*/
+.pagination-show-more {
+  width: 625px;
+  height: 55px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+/*пагинация*/
+.pagination {
+  display: flex;
+  justify-content: left;
+  margin-right: 8px;
+}
+
+.pagination-item {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 8px;
+  list-style-type: none;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promise {
+  color: #333333;
+}
+
+.contacts-phone {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.page-footer {
+  height: 120px;
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  align-content: center;
+}
+
+.footer-social-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 108px;
+  margin-left: 72px;
+  padding: 0;
+  align-self: center;
+  list-style-type: none;
+}
+
+.footer-social-item {
+  width: 32px;
+  height: 40px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+.footer-social {
+  align-content: center;
+}
+
+.contacts-phone {
+  display: flex;
+  justify-content: space-around;
+  width: 720px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.promo {
+  width: 240px;
+  height: 50px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
