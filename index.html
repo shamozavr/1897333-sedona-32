@@ -14,41 +14,39 @@
   <header class="page-header">
     <!--Навигация-->
     <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="about.html">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="hotels.html">Гостиницы</a>
-        </li>
-      </ul>
+      <div class="page-navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="about.html">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+          </li>
+        </ul>
+      </div>
 
       <!-- Лого -->
-      <a class="navigation-logo" href="index.html">
-        <img class="logo" src="images/header/logo.svg" width="138" height="70" alt="city of sedona">
-      </a>
-
+      <img class="logo" src="images/header/logo.svg" width="138" height="70" alt="city of sedona">
+      <!--навигация блок пользователя-->
       <ul class="navigation-user">
-        <li class="navigation-item">
+        <li class="navigation-user-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Поиск</span>
             <img src="images/header/search.svg" alt="поиск">
           </a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-user-item">
           <a class="navigation-link" href="#">
             <span class="visually-hidden">Избранное</span>
             <img class="heart" src="images/header/heart.svg" alt="избранное">
           </a>
         </li>
-        <li class="button-brown">
+        <li class="button-brown want-here navigation-user-item">
           <a class="navigation-link" href="catalog.html">
-            <span class="visually-hidden">
-              Хочу сюда
-            </span>
+            Хочу сюда
           </a>
         </li>
       </ul>
@@ -57,40 +55,43 @@
   <!--Основаная информация главной страницы-->
   <main class="main-container main-index">
     <div class="page-container">
-      <img class="welcome" src="images/main/welcome.svg"
-        alt="welcome to the gorgeous sedona because the grand canyon sucks!"><br>
+      <div class="background-container">
+        <img class="hero" src="images/main/welcome.svg"
+          alt="welcome to the gorgeous sedona because the grand canyon sucks!">
+      </div>
       <div class="intro">
-        <h1 class="about">Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <h1 class="about">Седона-небольшой городок в Аризоне,<br> заслуживающий большего!</h1>
         <p class="comparison">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <!--причины-->
       <section class="reasons">
         <h2 class="visually-hidden">причины чтобы поехать</h2>
         <div class="reasons-list">
-          <ul class="reason">
+          <ul class="reason reason-true-city">
             <li calss="true-city">
               <p class="reason-title coldblue-bg">Настоящий<br>городок</p>
-              <p class="reason-number coldblue-bg">-№1-</p>
-              <p class="reason-description coldblue-bg">Седона-не атракцион<br>для туристов, там течёт<br>своя жизнь</p>
+              <p class="reason-number coldblue-bg">&mdash; №1 &mdash;</p>
+              <p class="reason-description coldblue-bg">Седона &mdash; не атракцион<br>для туристов, там течёт<br>своя
+                жизнь</p>
             </li>
           </ul>
           <img class="reason-photo" src="images/main/city-view.jpg" alt="городской вид">
-          <ul class="reason">
-            <li>
+          <ul class="reason reason-home">
+            <li class="home">
               <img class="reason-icon coldgrey-bg" src="images/main/icon-house.svg" alt="иконка дома">
               <p class="reason-title coldgrey-bg">Жильё</p>
               <p class="reason-description coldgrey-bg">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
             </li>
           </ul class="reason">
-          <ul class="reason">
-            <li>
+          <ul class="reason reason-food">
+            <li class="food">
               <img class="reason-icon" src="images/main/icon-food.svg" alt="иконка еды">
               <p class="reason-title">Еда</p>
               <p class="reason-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
           </ul>
-          <ul class="reason">
-            <li>
+          <ul class="reason reason-souvenirs">
+            <li class="souvenirs">
               <img class="reason-icon coldgrey-bg" src="images/main/icon-souvenirs.svg" alt="иконка сувениров">
               <p class="reason-title coldgrey-bg">Сувениры</p>
               <p class="reason-description coldgrey-bg">Не только китайского,<br>но и настоящего
@@ -98,38 +99,39 @@
               </p>
             </li>
           </ul>
-          <img class="reason-photo" src="images/main/devil-bridge.jpg" alt="мост дьявола">
-          <ul class="reason">
-            <li>
+          <img class="reason-photo" src="images/main/the-bridge-of-the-devil.jpg" alt="мост дьявола">
+          <ul class="reason reason-devil-bridge">
+            <li class="devil-bridge">
               <p class="reason-title coldblue-bg">Там есть<br>мост дьявола</p>
-              <p class="reason-number coldblue-bg">-№2-</p>
+              <p class="reason-number coldblue-bg">&mdash; №2 &mdash;</p>
               <p class="reason-description coldblue-bg">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется
               </p>
             </li>
           </ul>
-          <ul class="reason">
-            <li>
+          <ul class="reason reason-area">
+            <li class="area">
               <p class="reason-title coldgrey-bg">Небольшая площадь</p>
-              <p class="reason-number coldgrey-bg">-№3-</p>
+              <p class="reason-number coldgrey-bg">&mdash; №3 &mdash;</p>
               <p class="reason-description coldgrey-bg">Все достопримечательности<br>находятся очень близко</p>
             </li>
           </ul>
-          <ul class="reason">
-            <li>
+          <ul class="reason reason-road">
+            <li class="road">
               <p class="reason-title warmgrey-bg">Красивая дорога</p>
-              <p class="reason-number warmgrey-bg">-№4-</p>
+              <p class="reason-number warmgrey-bg">&mdash; №4 &mdash;</p>
               <p class="reason-description warmgrey-bg">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
             </li>
           </ul>
-          <ul class="reason">
-            <li>
+          <ul class="reason reason-tourists">
+            <li class="tourists">
               <p class="reason-title coldgrey-bg">Мало туристов</p>
-              <p class="reason-number coldgrey-bg">-№5-</p>
+              <p class="reason-number coldgrey-bg">&mdash; №5 &mdash;</p>
               <p class="reason-description coldgrey-bg">Большинство едет в Гранд<br>Каньон и толпится там</p>
             </li>
           </ul>
         </div>
       </section>
+      <!--Заинтересовались?-->
       <section class="interested">
         <div class="interested-container">
           <h2>Заинтересовались?</h2>
@@ -143,8 +145,8 @@
         <div class="mailing-container">
           <h2>Подпишись на рассылку</h2>
           <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <div class="subscription-form">
-            <form action="https://echo.htmlacademy.ru/" method="post">
+          <div>
+            <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="newsletter-email">
                 <label class="visually-hidden" for="newsletter-email">Email</label>
                 <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"

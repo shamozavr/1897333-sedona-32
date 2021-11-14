@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -34,26 +34,69 @@ body {
 }
 
 .navigation {
-  height: 70px;
-  display: flex;
-  width: 1057px;
+  display: grid;
+  grid-template-areas: "page-navigation logo navigation-user";
+  grid-template-columns: 530px 140px 530px;
+  height: 65px;
+  width: 1200px;
   margin: 0 auto;
+  padding: 0;
+}
+
+.page-navigation {
+  grid-area: page-navigation;
+  justify-content: left;
+  margin-left: 71px;
+  padding: 0;
+}
+
+.page-navigation.navigation-item {
+  padding-right: 33px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.want-here {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 37px;
 }
 
 .navigation-list {
   display: flex;
-  width: 530px;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+.logo {
+  grid-area: logo;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-user {
+  grid-area: navigation-user;
   display: flex;
-  width: 280px;
+  justify-content: right;
+  margin-right: 72px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.navigation-user-item {
+  padding-right: 20px;
+}
+
+.navigation-item {
+  display: flex;
 }
 
 .navigation-link {
@@ -67,23 +110,34 @@ body {
   text-align: center;
 }
 
-.navigation-user .navigation-link {
+.navigation-user,
+.navigation-link {
   min-width: 18px;
   min-height: 18px;
-}
-
-.main-container {
-  flex-grow: 1;
-  padding-top: 51.4px;
 }
 
 .main-index {
   color: inherit;
   background-color: inherit;
-  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/main/index-background.jpg");
+  text-align: center;
+}
+
+.background-container {
+  flex-grow: 1;
+  padding-top: 51.4px;
+  position: relative;
+  background-image: url("../images/main/index-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  text-align: center;
+}
+
+.background-container::after {
+  content: url("../images/main/divider.svg");
+  display: block;
+  position: absolute;
+  bottom: 0;
+  height: 57px;
+  width: 100%;
 }
 
 .page-container {
@@ -91,16 +145,10 @@ body {
   margin: 0 auto;
 }
 
-.welcome {
+.hero {
   height: 350.57px;
   width: 456.7px;
   margin-bottom: 83.03px;
-}
-
-.divider {
-  width: 1200px;
-  height: 67px;
-  content: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/main/divider.svg");
 }
 
 .intro {
@@ -110,31 +158,38 @@ body {
 }
 
 .about {
-  margin: 0;
+  margin-top: 63px;
   padding: 0;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
   color: #000000;
-  background-color: #ffffff;
-}
-
-.divider {
-  position: absolute;
-  left: 0;
-  width: 1200;
 }
 
 .comparison {
   margin: 0;
   padding: 0;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
   color: #333333;
   background-color: #ffffff;
 }
 
-/*не работает
-.reasons {
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
   width: 1200px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
-*/
 
 .reason {
   margin: 0;
@@ -144,21 +199,40 @@ body {
   list-style-type: none;
 }
 
+.reason {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  width: 400px;
+  height: 384px;
+  list-style-type: none;
+}
+
+.reason-true-city,
+.reason-devil-bridge {
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+
+.reason-home,
+.reason-souvenirs,
+.reason-area,
+.reason-tourists {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.reason-road {
+  background: rgba(131, 179, 211, 0.2);
+}
+
 .reason-photo {
   width: 800;
   height: 384;
 }
-.reasons-list {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
-  margin: 0;
-  padding: 0;
-}
 
 .reason-title {
-  color: inherit;
-  background-color: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -168,7 +242,6 @@ body {
 }
 
 .reason-number {
-  color: #333333;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -178,34 +251,16 @@ body {
 }
 
 .reason-description {
-  color: #333333;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   margin: 0;
 }
 
-/*надо додумать чтобы измавиться от coldblue-bg*/
-.reasons-list .reason .true-city {
+/*надо додумать чтобы избавиться от coldblue-bg*/
+.true-city {
   color: #ffffff;
   background-color: #83b3d3;
-}
-
-.coldblue-bg {
-  color: #ffffff;
-  background-color: #83b3d3;
-}
-
-.coldgrey-bg {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.warmgrey-bg {
-  background-color: rgba(131, 179, 211, 0.2);
-}
-.travel-date {
-  color: #333333;
-  background-color: #ffffff;
 }
 
 .button-brown {
@@ -225,17 +280,28 @@ body {
 }
 
 .looking-for-hotel {
-  display: block;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 13px;
   margin: 0 auto;
   width: 575px;
   height: 60px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 10px;
 }
 
 .mailing {
   display: block;
   color: #ffffff;
   background-color: #000000;
-  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/main/mailing-background.jpg");
+  background-image: url("../images/main/mailing-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -246,26 +312,44 @@ body {
   padding-top: 94px;
 }
 
+.subscription-form {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
 .field {
   width: 600px;
   height: 60px;
+  background: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+  border: none;
 }
 
-/*
-.subscription-form {
-  display: inline-block;
+.placeholder {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  opacity: 0.6;
 }
-*/
 
 .button-subscribe {
   width: 200px;
-  height: 60px;
+  height: 62px;
+  border: none;
+  border-radius: 0px 10px 10px 0px;
 }
 
 .main-inner {
   color: #ffffff;
   background-color: #ffffff;
-  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/catalogue-background.jpg");
+  background-image: url("../images/main/catalogue-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   text-align: center;
@@ -382,31 +466,31 @@ body {
 }
 
 .ratio-stars-1 {
-  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-image: url("../images/main/star.svg");
   background-repeat: repeat-x;
   width: 18px;
 }
 
 .ratio-stars-2 {
-  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-image: url("../images/main/star.svg");
   background-repeat: repeat-x;
   width: 36px;
 }
 
 .ratio-stars-3 {
-  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-image: url("../images/main/star.svg");
   background-repeat: repeat-x;
   width: 54px;
 }
 
 .ratio-stars-4 {
-  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-image: url("../images/main/star.svg");
   background-repeat: repeat-x;
   width: 72px;
 }
 
 .ratio-stars-5 {
-  background-image: url("C:/Users/Роман/Documents/GitHub/1897333-sedona-32/images/catalogue/star.svg");
+  background-image: url("../images/main/star.svg");
   background-repeat: repeat-x;
   width: 90px;
 }
@@ -479,7 +563,7 @@ body {
   width: 1200px;
   display: flex;
   margin: 0 auto;
-  align-content: center;
+  align-items: center;
 }
 
 .footer-social-list {
