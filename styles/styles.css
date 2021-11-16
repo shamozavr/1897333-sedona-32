@@ -20,7 +20,6 @@ html {
 
 body {
   margin: 0;
-  width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -29,8 +28,6 @@ body {
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
-  outline-offset: -5px;
 }
 
 .navigation {
@@ -79,6 +76,7 @@ body {
   justify-self: center;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 .navigation-user {
@@ -347,36 +345,52 @@ body {
 }
 
 .main-inner {
-  color: #ffffff;
-  background-color: #ffffff;
-  background-image: url("../images/main/catalogue-background.jpg");
+  min-width: 1024px;
+  background-image: url("../images/catalogue/catalogue-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  text-align: center;
-}
-
-.main-inner-container {
-  width: 1056px;
   margin: 0 auto;
+  padding: 0;
+  justify-self: center;
+  flex-grow: 1;
+  position: relative;
 }
 
 .inner-header-title {
-  text-align: left;
+  display: flex;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
   margin-top: 35px;
-  line-height: 68px;
+  margin-bottom: 0;
+  padding-left: 71px;
+  line-height: 1;
 }
 
 /*как их сместить влево?*/
 .breadcrumbs {
-  width: 111;
-  height: 21;
-  margin-left: 0;
   display: flex;
   justify-content: start;
   list-style-type: none;
+  width: 111;
+  height: 21;
+  margin-left: 71px;
+  padding: 0;
+  margin-top: 0;
 }
 
 .breadcrumbs-item {
+  margin: 0;
+  padding: 0;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
   padding-right: 10px;
 }
 
@@ -385,44 +399,130 @@ body {
   display: flex;
 }
 
+.catalog-filter-group {
+  margin-left: 71px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 71px;
+}
+
+.catalog-filter-title {
+  padding: 0;
+  margin: 0;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.legend {
+  padding: 0;
+  margin: 0;
+}
+
 /*где чекбоксы*/
 .catalog-filter-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-top: 30px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.control input label:before {
+  margin: 0;
+  padding: 0;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+.control input label::before {
+  background: black;
+}
+
+.filter-button {
+  display: flex;
+  flex-direction: column;
 }
 
 .button-submit {
   width: 160px;
   height: 48px;
   border: none;
-  margin-top: 105px;
+  margin-top: 60px;
+}
+
+.reset {
+  text-decoration: none;
 }
 
 .display-parameters {
   display: flex;
+  align-items: center;
 }
 
-/*before и after не понимаю*/
+/*слишком большой отступ из за h2*/
 .searching-result {
-  padding-right: 192px;
+  margin-left: 71px;
+  padding: 0;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.select-control {
+  width: 287px;
+  height: 48px;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-left: 182px;
 }
 
 .view-buttons {
   display: flex;
   margin-right: 0;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  padding-left: 81px;
 }
 
-.catalogue-view {
-  display: block;
-  width: 16px;
-  height: 14px;
+.view-button {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 2px solid #e6e6e6;
   box-sizing: border-box;
   border-radius: 4px;
-  border-spacing: 16;
+}
+
+.hotel-list {
+  margin: 0 auto;
+  padding-left: 71px;
 }
 
 .hotel-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   width: 1056px;
   display: flex;
   justify-content: left;
