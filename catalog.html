@@ -192,7 +192,7 @@
             <a href="#" class="button-add-to-wishlist button-azure">В избранное</a>
             <img class="ratio-stars-4">
             <!--какого хера не отображаются долбаные звездочки-->
-            <p class="ratio-points">Рейтинг:8,5</p>
+            <p class="ratio-points">Рейтинг: 8,5</p>
           </div>
           <div class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -203,7 +203,7 @@
             <p class="hotel-card-price">от 3000 ₽</p>
             <a href="#" class="button-more-info button-brown">Подробнее</a>
             <a href="#" class="button-add-to-wishlist button-azure">В избранное</a>
-            <p class="ratio-points">Рейтинг:8,9</p>
+            <p class="ratio-points">Рейтинг: 8,9</p>
           </div>
           <div class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -216,7 +216,7 @@
             <a href="#" class="button-more-info button-brown">Подробнее</a>
             <a href="#" class="button-add-to-wishlist button-azure">В избранное</a>
             <br>
-            <p class="ratio-points">Рейтинг:9,2</p>
+            <p class="ratio-points">Рейтинг: 9,2</p>
           </div>
           <div class="hotel-card">
             <a class="hotel-card-link" href="hotel.html">
@@ -228,10 +228,12 @@
             <a href="#" class="button-more-info button-brown">Подробнее</a>
             <a href="#" class="button-add-to-wishlist button-azure">В избранное</a>
             <br>
-            <p class="ratio-points">Рейтинг:9,2</p>
+            <p class="ratio-points">Рейтинг: 9,2</p>
           </div>
         </section>
-        <button class="button pagination-show-more button-azure" type="button">Загрузить еще</button>
+        <div class="show-more-wrapper">
+          <button class="button show-more button-azure" type="button">Загрузить еще</button>
+        </div>
         <div class="pages">
           <ul class="pagination">
             <li class="pagination-item">
@@ -263,8 +265,8 @@
               </a>
             </li>
           </ul>
+          <h3 class="hotels-page-count-for-show-result">Гостиниц на странице:</h3>
           <form class="hotels-page-count-for-show">
-            <h3 class="hotels-page-count-for-show-result">Гостиниц на странице:</h3>
             <label class="visually-hidden" for="count-for-show-display"></label>
             <select class="select-control" id="count-for-show-display" name="count-for-show-display">
               <option value="4">4</option>
@@ -275,17 +277,21 @@
           </form>
         </div>
         <!--подписка на рассылку-->
-        <section class="subscribe">
-          <h2>Подпишись на рассылку</h2>
-          <p class="promise">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <p class="newsletter-email">
-              <label class="visually-hidden" for="newsletter-email">Email</label>
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-                required>
-            </p>
-            <button class="button-subscribe button-azure" type="submit">Подписаться</button>
-          </form>
+        <section class="mailing-inner">
+          <div class="mailing-container">
+            <h2 class="subscription">Подпишись на рассылку</h2>
+            <p class="promise">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+            <div>
+              <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+                <p class="newsletter-email">
+                  <label class="visually-hidden" for="newsletter-email">Email</label>
+                  <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+                    id="newsletter-email" required>
+                </p>
+                <button class="button-subscribe button-azure" type="submit">Подписаться</button>
+              </form>
+            </div>
+          </div>
         </section>
       </div>
   </main>
