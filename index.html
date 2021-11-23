@@ -43,10 +43,75 @@
             <span class="visually-hidden">Избранное</span>
             <img class="heart" src="images/header/heart.svg" alt="избранное">
           </a>
+          <!--поповер-->
+          <svg class="popover-arrow" width="20" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#a)">
+              <path d="m10 1 10 9H0l10-9Z" fill="#fff" />
+            </g>
+            <defs>
+              <filter id="a" x="0" y="0" width="20" height="10" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feOffset dy="-1" />
+                <feColorMatrix values="0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 1 0" />
+                <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_5_544" />
+                <feBlend in="SourceGraphic" in2="effect1_dropShadow_5_544" result="shape" />
+              </filter>
+            </defs>
+          </svg>
+          <div class="popover">
+            <!--
+            <button class="popover-close-button button button-light">
+              2
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            -->
+            <div class="popover-content">
+              <ul class="favourite-hotel-list">
+                <li class="favourite-hotel">
+                  <img class="popup-favourite-hotel-image" src="images/catalogue/catalogue-2.jpg"
+                    alt="изображение отеля">
+                  <p class="favourite-hotel-title">Desert Quail Inn</p>
+                  <p class="favourite-hotel-type">Мотель</p>
+                  <button class="delete-button" type="button" class="favourite-item-button button">
+                    <svg class="delete-image" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity=".2" fill="#000">
+                        <path
+                          d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" />
+                        <path
+                          d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" />
+                      </g>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+                <li class="favourite-hotel">
+                  <img class="popup-favourite-hotel-image" src="images/catalogue/catalogue-3.jpg"
+                    alt="изображение отеля">
+                  <p class="favourite-hotel-title">Villas at Poco Diablo</p>
+                  <p class="favourite-hotel-type">Апартаменты</p>
+                  <button class="delete-button" type="button" class="favourite-item-button button">
+                    <svg class="delete-image" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g opacity=".2" fill="#000">
+                        <path
+                          d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z" />
+                        <path
+                          d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z" />
+                      </g>
+                    </svg>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </button>
+                </li>
+              </ul>
+
+            </div>
+            <p class="full-list">Все избранные</p>
+          </div>
         </li>
-        <li class="button-brown want-here navigation-user-item">
-          <a class="navigation-link" href="catalog.html">
-            Хочу сюда
+        <li class="want-here-wrapper navigation-user-item">
+          <a class="navigation-link want-here" href="catalog.html">
+            Хочу сюда!
           </a>
         </li>
       </ul>
@@ -143,8 +208,8 @@
       <!--подписка на рассылку-->
       <section class="mailing">
         <div class="mailing-container">
-          <h2>Подпишись на рассылку</h2>
-          <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+          <h2 class="subscription">Подпишись на рассылку</h2>
+          <p class="promise">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <div>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
               <p class="newsletter-email">
@@ -191,6 +256,56 @@
       <img class="promo-link" src="images/footer/logo_htmlacademy.svg" alt="ссылка на сайт академии">
     </a>
   </footer>
+  <!--модальное окно
+  <div class="modal-container">
+    <div class="modal">
+      <section class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <div class="modal-close-button-wrapper">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>
+        <div class="arrival">
+          <label for="arrival">Дата заезда</label>
+        </div>
+        <div class="arrival-date">
+          <input type="date" id="date" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+        </div>
+        <p class="tip error">Мы не можем отправить вас в прошлое</p>
+        <div class="departure">
+          <label for="departure">Дата выезда</label>
+        </div>
+        <div class="departure-date">
+          <input type="date" id="date" name="date" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+        </div>
+        <p class="tip good-tip">На эти даты есть свободные номера. Пока есть.</p>
+
+        <p class="grown-ups">Взрослые:</p>
+        <div class="grown-ups-counter">
+          <span class="minus">-</span>
+          <input class="grown-up-number" type="text" value="2">
+          <span class="plus">+</span>
+        </div>
+        <p class="kids">Дети:</p>
+        <div class="info-wrapper">
+          <p class="info">
+            i
+          </p>
+        </div>
+        <div class="kids-counter">
+          <span class="minus">-</span>
+          <input class="kids-number" type="text" value="1">
+          <span class="plus">+</span>
+        </div>
+        <div class="button-search-wrap">
+          <a class="button-search">Поиск</a>
+        </div>
+    </div>
+    </section>
+  </div>
+  </div>
+-->
 </body>
 
 </html>
